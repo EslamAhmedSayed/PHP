@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
+body {
+    background-color: #f0f0f0;
+ font-family: 'Cairo', sans-serif;
+}
+/* تحديد حجم الصورة وتدويرها */
+.img-fluid.rounded-circle {
+    width: 100px; /* تحديد عرض الصورة */
+    height: 100px; /* تحديد ارتفاع الصورة */
+    border-radius: 50%; /* جعل الصورة دائرية */
+    object-fit: cover; /* تغيير نوع توسيط الصورة */
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-right: 80px;
+    outline: none;
+}
+.sidebar{
+    background-color: #0fcebaff;
+    height: 100vh;
+    width: 300px;
+    margin-top: -7px;
+    margin-right: -7px;
+}
+.sidebar h3{
+    color: rgb(253, 250, 250);
+    font-size: 30px;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+.sidebar h2{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.sidebar i{
+    margin-right: 10px;
+    color: rgb(35, 35, 199);
+}
+.sidebar h2:hover{
+    background-color:  rgb(14, 241, 219);
+    width: 260px;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 300px;
+    margin-top: -600px;
+}
+
+/* Add a hover effect to the cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the lesson name */
+.lesson-name {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Style for the lesson image */
+.lesson-image {
+    max-width: 400px;
+    height: auto;
+}
+   /* Move the first card to the left slightly */
+   .card:last-child {
+    margin-right: 70px; /* Adjust the value as needed */
+}

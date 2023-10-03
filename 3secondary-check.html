@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتب الكود الخاص بك</title>
+    <link rel="stylesheet" href="3secondary-check.css">
+</head>
+<body>
+    <img src="images/login 3secondary-check.png" alt="">
+    <div id="container">
+        <h2>اكتب الكود و البريد الاكتروني الخاص بك</h2>
+        <form id="registrationForm">
+            <input type="text" id="code" placeholder="ادخل الكود " required><br>
+            <input type="text" id="email" placeholder=" ادخل الجيميل الخاص بك " required><br>
+            <button type="button" onclick="register()">سجل الدخول</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script>
+        function register() {
+            var codeInput = document.getElementById('code').value;
+            var emailInput = document.getElementById('email').value;
+
+            // Define the allowed codes and associated Gmail addresses
+            var allowedCodes = {
+                "eslameslam": "eslamahmedsayed43@gmail.com",
+                "12345": "ee@gmail.com" , 
+                "01143744606": "ahmedsayeddeutsch@gmail.com"
+            };
+
+            if (allowedCodes[codeInput] && allowedCodes[codeInput] === emailInput) {
+                // Redirect to the desired page upon successful registration
+                window.location.href = "3secondary.html";
+            } else {
+                document.getElementById('message').textContent = "البريد الالكتروني او الكود خاطئ ";
+            }
+        }
+    </script>
+</body>
+</html>

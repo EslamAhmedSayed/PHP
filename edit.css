@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Cairo', sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.w-450 {
+  width: 450px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+.form-label {
+    font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  font-family: 'Cairo', sans-serif;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-family: 'Cairo', sans-serif;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 130px;
+}
+/* Add this CSS to your stylesheet (style.css) */
+.img-profile {
+width: 70px;
+margin-right: 190px;
+margin-top: 10px;
+margin-bottom: 10px;
+  }
+  
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.link-secondary {
+  color: #0c0c0c;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.link-secondary:hover {
+  text-decoration: underline;
+}
+h4{
+    color: #0056b3;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -17px;
+    margin-bottom: -20px;
+}
